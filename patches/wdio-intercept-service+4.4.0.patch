@@ -1,0 +1,80 @@
+diff --git a/node_modules/wdio-intercept-service/lib/interceptor.js b/node_modules/wdio-intercept-service/lib/interceptor.js
+index 8e9b901..89dd1f5 100644
+--- a/node_modules/wdio-intercept-service/lib/interceptor.js
++++ b/node_modules/wdio-intercept-service/lib/interceptor.js
+@@ -50,6 +50,12 @@ var interceptor = {
+       }
+     }
+ 
++    if (typeof window.navigator.sendBeacon == 'function') {
++      replaceSendBeacon();
++    } else {
++      console.error(PKG_PREFIX + 'sendBeacon API preconditions not met!');
++    }
++
+     replaceXHR();
+ 
+     done(window[NAMESPACE]);
+@@ -115,6 +121,48 @@ var interceptor = {
+       };
+     }
+ 
++    function replaceSendBeacon() {
++      var _sendBeacon = window.navigator.sendBeacon;
++      var interceptSendBeacon = function (url, payload) {
++        var request = {
++          method: 'POST',
++          requestHeaders: {},
++          requestBody: payload,
++          url: url,
++        };
++
++        addPendingRequest(request);
++
++        var isRequestQueuedForTransfer = _sendBeacon.apply(window.navigator, [
++          url,
++          payload,
++        ]);
++
++        completeSendBeaconRequest(request, {
++          body: isRequestQueuedForTransfer,
++        });
++
++        // Forward the original response to the application on the current tick.
++        return isRequestQueuedForTransfer;
++      };
++
++      window.navigator.sendBeacon = function (target, data) {
++        var url = target;
++
++        if (target instanceof URL) {
++          url = target.href;
++        }
++
++        if (data instanceof Blob) {
++          return data
++            .text()
++            .then((payload) => interceptSendBeacon(url, payload));
++        }
++
++        return interceptSendBeacon(url, data);
++      };
++    }
++
+     function replaceXHR() {
+       var originalOpen = XMLHttpRequest.prototype.open;
+       var originalSend = XMLHttpRequest.prototype.send;
+@@ -250,6 +298,13 @@ var interceptor = {
+       replaceInSessionStorage(startedRequest);
+     }
+ 
++    function completeSendBeaconRequest(startedRequest, completedRequest) {
++      startedRequest.body = completedRequest.body;
++      startedRequest.statusCode = completedRequest.body === true ? 200 : 500;
++      startedRequest.__fulfilled = Date.now();
++      replaceInSessionStorage(startedRequest);
++    }
++
+     function completeXHRRequest(startedRequest, responseBody) {
+       // Merge the completed data with the started request.
+       startedRequest.body = responseBody;

@@ -1,0 +1,113 @@
+{
+  "name": "ui-test",
+  "version": "1.0.0",
+  "description": "Boilerplate project to run WebdriverIO tests with Cucumber and Appium on BrowserStack",
+  "private": true,
+  "type": "module",
+  "author": "Priyam <priyamd1002@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/"
+  },
+  "homepage": "https://github.com/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/"
+  },
+  "keywords": [
+    "wdio",
+    "webdriver",
+    "webdriverio",
+    "cucumber",
+    "test",
+    "boilerplate",
+    "selenium"
+  ],
+  "scripts": {
+    "test": "run-s test:*",
+    "test:lint": "eslint 'src/**/*.ts'",
+    "test:features": "node --loader ts-node/esm ./node_modules/.bin/wdio run config/wdio.local.conf.ts",
+    "wdio:percy": "TZ=UTC percy exec -- npm run wdio -- --spec=src/examples/percySnapshot.feature",
+    "wdio": "node --loader ts-node/esm ./node_modules/.bin/wdio run config/wdio.local.conf.ts",
+    "wdio:dev": "npm run wdio -- --spec=src/examples/development_sdk_track.feature",
+    "wdio:browserstack": "node --loader ts-node/esm ./node_modules/.bin/wdio run config/wdio.bs.conf.ts",
+    "wdio:examples": "node --loader ts-node/esm ./node_modules/.bin/wdio run config/wdio.examples.conf.ts",
+    "wdio:mobilebrowsers": "node --loader ts-node/esm ./node_modules/.bin/wdio run config/wdio.mobileBrowser.conf.ts",
+    "prepare": "husky install",
+    "postinstall": "patch-package",
+    "format": "prettier --write .",
+    "lint:js": "eslint \"src/**/*.ts\"",
+    "lint:gherkin": "gherkin-lint ./src/features/",
+    "lint": "npm run lint:js && npm run lint:gherkin",
+    "lint:fix": "npm exec -- prettier \"src/**/*.ts\" --check --write && npm exec -- eslint \"src/**/*.ts\" --fix && npm run lint:gherkin",
+    "pre-commit": "lint-staged",
+    "clean:reports": "npx rimraf -y reports",
+    "pretest": "npm run clean:reports"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "11.0.1",
+    "@types/supertest": "2.0.12",
+    "@types/yargs": "17.0.24",
+    "@typescript-eslint/eslint-plugin": "6.2.1",
+    "@typescript-eslint/parser": "6.2.1",
+    "@wdio/appium-service": "8.14.1",
+    "@wdio/browserstack-service": "8.14.1",
+    "@wdio/cli": "8.14.1",
+    "@wdio/config": "8.14.0",
+    "@wdio/cucumber-framework": "8.14.0",
+    "@wdio/local-runner": "8.14.1",
+    "@wdio/selenium-standalone-service": "8.14.0",
+    "@wdio/spec-reporter": "8.14.0",
+    "@wdio/static-server-service": "8.14.0",
+    "chromedriver": "116.0.0",
+    "dotenv": "16.3.1",
+    "eslint": "8.46.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-config-prettier": "8.9.0",
+    "eslint-plugin-import": "2.28.0",
+    "eslint-plugin-unicorn": "48.0.1",
+    "eslint-plugin-wdio": "8.8.7",
+    "gherkin-lint": "4.2.2",
+    "http-server": "14.1.1",
+    "husky": "8.0.3",
+    "lint-staged": "13.2.3",
+    "npm-run-all": "4.1.5",
+    "patch-package": "8.0.0",
+    "prettier": "3.0.0",
+    "ts-node": "10.9.1",
+    "typescript": "5.0.4",
+    "wdio-chromedriver-service": "8.1.1",
+    "webdriverio": "8.14.1"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "8.11.1",
+    "@percy/cli": "^1.27.1",
+    "@percy/webdriverio": "3.0.0",
+    "@wdio/browserstack-service": "8.14.0",
+    "@wdio/cucumber-framework": "8.14.0",
+    "@wdio/devtools-service": "8.14.1",
+    "@wdio/globals": "8.14.1",
+    "@wdio/shared-store-service": "8.16.5",
+    "@wdio/types": "8.14.0",
+    "dotenv": "16.3.1",
+    "expect-webdriverio": "4.2.7",
+    "fs-extra": "11.1.1",
+    "multiple-cucumber-html-reporter": "3.4.0",
+    "supertest": "6.3.3",
+    "wdio-cucumberjs-json-reporter": "5.1.6",
+    "wdio-intercept-service": "4.4.0",
+    "yargs": "17.7.2"
+  },
+  "overrides": {
+    "@wdio/cucumber-framework": "8.14.0"
+  },
+  "lint-staged": {
+    "src/**/*.ts": [
+      "prettier --check --write",
+      "eslint --fix"
+    ],
+    "src/**/*.feature": [
+      "gherkin-lint"
+    ]
+  }
+}

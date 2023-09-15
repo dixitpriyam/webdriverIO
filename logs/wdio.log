@@ -1,0 +1,10 @@
+2023-09-15T12:34:05.718Z INFO chromedriver: Initiate Chromedriver Launcher (v8.1.1)
+2023-09-15T12:34:05.718Z INFO @wdio/cli:launcher: Run onPrepare hook
+2023-09-15T12:34:05.719Z INFO chromedriver: Start Chromedriver (/Users/priyamdixit/airbase_demo/node_modules/chromedriver/lib/chromedriver/chromedriver) with args --port=9515 --url-base=/
+2023-09-15T12:34:05.728Z INFO @wdio/shared-store-service: Started shared server on port 57853
+2023-09-15T12:34:05.830Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2023-09-15T12:34:05.831Z INFO @wdio/local-runner: Start worker 0-0 with arg: run,config/wdio.local.conf.ts,--spec=src/features/amazon.feature
+2023-09-15T12:36:07.278Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
+2023-09-15T12:36:07.279Z INFO @wdio/cli:launcher: Run onComplete hook
+2023-09-15T12:36:07.337Z INFO @wdio/local-runner: Shutting down spawned worker
+2023-09-15T12:36:07.588Z INFO @wdio/local-runner: Waiting for 0 to shut down gracefully

@@ -1,0 +1,991 @@
+2023-09-15T12:34:06.264Z INFO @wdio/local-runner: Run worker command: run
+2023-09-15T12:34:06.660Z INFO wdio-cucumberjs-json-reporter: The 'reportFilePerRetry' was not set, it has been set to the default 'true'
+2023-09-15T12:34:06.853Z INFO webdriver: Initiate new session using the WebDriver protocol
+2023-09-15T12:34:06.853Z INFO webdriver: Connecting to existing driver at http://localhost:9515/
+2023-09-15T12:34:06.855Z INFO webdriver: [POST] http://localhost:9515/session
+2023-09-15T12:34:06.855Z INFO webdriver: DATA {
+  capabilities: {
+    alwaysMatch: {
+      browserName: 'chrome',
+      'goog:chromeOptions': [Object],
+      'wdio:sharedStoreServicePort': 57853
+    },
+    firstMatch: [ {} ]
+  },
+  desiredCapabilities: {
+    browserName: 'chrome',
+    'goog:chromeOptions': { args: [Array] },
+    'wdio:sharedStoreServicePort': 57853
+  }
+}
+2023-09-15T12:34:08.215Z INFO webdriver: COMMAND navigateTo("https://www.amazon.com/")
+2023-09-15T12:34:08.215Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/url
+2023-09-15T12:34:08.215Z INFO webdriver: DATA { url: 'https://www.amazon.com/' }
+2023-09-15T12:34:10.204Z INFO webdriver: RESULT null
+2023-09-15T12:34:10.205Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+2023-09-15T12:34:10.205Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+2023-09-15T12:34:10.205Z INFO webdriver: COMMAND deleteAllCookies()
+2023-09-15T12:34:10.205Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/execute/sync
+2023-09-15T12:34:10.205Z INFO webdriver: DATA {
+  script: 'return (function () {\n' +
+    '            localStorage.clear();\n' +
+    '        }).apply(null, arguments)',
+  args: []
+}
+2023-09-15T12:34:10.205Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/execute/sync
+2023-09-15T12:34:10.205Z INFO webdriver: DATA {
+  script: 'return (function () {\n' +
+    '            sessionStorage.clear();\n' +
+    '        }).apply(null, arguments)',
+  args: []
+}
+2023-09-15T12:34:10.206Z INFO webdriver: [DELETE] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/cookie
+2023-09-15T12:34:10.207Z INFO webdriver: COMMAND getUrl()
+2023-09-15T12:34:10.207Z INFO webdriver: [GET] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/url
+2023-09-15T12:34:10.298Z INFO webdriver: RESULT null
+2023-09-15T12:34:10.378Z INFO webdriver: RESULT null
+2023-09-15T12:34:10.384Z INFO webdriver: RESULT null
+2023-09-15T12:34:10.386Z INFO webdriver: RESULT https://www.amazon.com/
+2023-09-15T12:34:10.388Z INFO webdriver: COMMAND getTitle()
+2023-09-15T12:34:10.388Z INFO webdriver: [GET] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/title
+2023-09-15T12:34:10.391Z INFO webdriver: RESULT Amazon.com. Spend less. Smile more.
+2023-09-15T12:34:10.392Z INFO webdriver: COMMAND findElement("xpath", "//input[@name='field-keywords']")
+2023-09-15T12:34:10.392Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element
+2023-09-15T12:34:10.392Z INFO webdriver: DATA { using: 'xpath', value: "//input[@name='field-keywords']" }
+2023-09-15T12:34:10.405Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'CB10777661EEC41CA2DC63A73369EA5C_element_17'
+}
+2023-09-15T12:34:10.408Z INFO webdriver: COMMAND findElements("xpath", "//input[@name='field-keywords']")
+2023-09-15T12:34:10.408Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/elements
+2023-09-15T12:34:10.408Z INFO webdriver: DATA { using: 'xpath', value: "//input[@name='field-keywords']" }
+2023-09-15T12:34:10.416Z INFO webdriver: RESULT [
+  {
+    'element-6066-11e4-a52e-4f735466cecf': 'CB10777661EEC41CA2DC63A73369EA5C_element_17'
+  }
+]
+2023-09-15T12:34:10.418Z INFO webdriver: COMMAND findElements("xpath", "//input[@name='field-keywords']")
+2023-09-15T12:34:10.418Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/elements
+2023-09-15T12:34:10.418Z INFO webdriver: DATA { using: 'xpath', value: "//input[@name='field-keywords']" }
+2023-09-15T12:34:10.424Z INFO webdriver: RESULT [
+  {
+    'element-6066-11e4-a52e-4f735466cecf': 'CB10777661EEC41CA2DC63A73369EA5C_element_17'
+  }
+]
+2023-09-15T12:34:10.425Z INFO webdriver: COMMAND findElement("xpath", "//input[@name='field-keywords']")
+2023-09-15T12:34:10.425Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element
+2023-09-15T12:34:10.425Z INFO webdriver: DATA { using: 'xpath', value: "//input[@name='field-keywords']" }
+2023-09-15T12:34:10.429Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'CB10777661EEC41CA2DC63A73369EA5C_element_17'
+}
+2023-09-15T12:34:10.430Z INFO webdriver: COMMAND elementClick("CB10777661EEC41CA2DC63A73369EA5C_element_17")
+2023-09-15T12:34:10.430Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element/CB10777661EEC41CA2DC63A73369EA5C_element_17/click
+2023-09-15T12:34:10.474Z INFO webdriver: RESULT null
+2023-09-15T12:34:10.474Z INFO webdriver: COMMAND findElements("xpath", "//input[@name='field-keywords']")
+2023-09-15T12:34:10.475Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/elements
+2023-09-15T12:34:10.475Z INFO webdriver: DATA { using: 'xpath', value: "//input[@name='field-keywords']" }
+2023-09-15T12:34:10.481Z INFO webdriver: RESULT [
+  {
+    'element-6066-11e4-a52e-4f735466cecf': 'CB10777661EEC41CA2DC63A73369EA5C_element_17'
+  }
+]
+2023-09-15T12:34:10.482Z INFO webdriver: COMMAND findElement("xpath", "//input[@name='field-keywords']")
+2023-09-15T12:34:10.482Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element
+2023-09-15T12:34:10.482Z INFO webdriver: DATA { using: 'xpath', value: "//input[@name='field-keywords']" }
+2023-09-15T12:34:10.487Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'CB10777661EEC41CA2DC63A73369EA5C_element_17'
+}
+2023-09-15T12:34:10.488Z INFO webdriver: COMMAND elementClear("CB10777661EEC41CA2DC63A73369EA5C_element_17")
+2023-09-15T12:34:10.488Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element/CB10777661EEC41CA2DC63A73369EA5C_element_17/clear
+2023-09-15T12:34:10.500Z INFO webdriver: RESULT null
+2023-09-15T12:34:10.501Z INFO webdriver: COMMAND elementSendKeys("CB10777661EEC41CA2DC63A73369EA5C_element_17", "<Screenshot[base64]>")
+2023-09-15T12:34:10.501Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element/CB10777661EEC41CA2DC63A73369EA5C_element_17/value
+2023-09-15T12:34:10.501Z INFO webdriver: DATA { text: 'smartwatches' }
+2023-09-15T12:34:10.575Z INFO webdriver: RESULT null
+2023-09-15T12:34:10.576Z INFO webdriver: COMMAND performActions(<object>)
+2023-09-15T12:34:10.576Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/actions
+2023-09-15T12:34:10.576Z INFO webdriver: DATA {
+  actions: [ { id: 'action1', type: 'key', parameters: {}, actions: [Array] } ]
+}
+2023-09-15T12:34:13.100Z INFO webdriver: RESULT null
+2023-09-15T12:34:13.100Z INFO webdriver: COMMAND releaseActions()
+2023-09-15T12:34:13.100Z INFO webdriver: [DELETE] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/actions
+2023-09-15T12:34:13.102Z INFO webdriver: RESULT null
+2023-09-15T12:34:13.103Z INFO webdriver: COMMAND findElement("xpath", "//span[@class='a-color-state a-text-bold']")
+2023-09-15T12:34:13.103Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element
+2023-09-15T12:34:13.103Z INFO webdriver: DATA { using: 'xpath', value: "//span[@class='a-color-state a-text-bold']" }
+2023-09-15T12:34:13.115Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '4F23FBCE08D03DF51EF4B5FF425D2746_element_243'
+}
+2023-09-15T12:34:13.116Z INFO webdriver: COMMAND getElementProperty("4F23FBCE08D03DF51EF4B5FF425D2746_element_243", "value")
+2023-09-15T12:34:13.116Z INFO webdriver: [GET] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element/4F23FBCE08D03DF51EF4B5FF425D2746_element_243/property/value
+2023-09-15T12:34:13.118Z INFO webdriver: RESULT null
+2023-09-15T12:34:13.118Z INFO webdriver: COMMAND findElement("xpath", "//span[@class='a-color-state a-text-bold']")
+2023-09-15T12:34:13.118Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element
+2023-09-15T12:34:13.118Z INFO webdriver: DATA { using: 'xpath', value: "//span[@class='a-color-state a-text-bold']" }
+2023-09-15T12:34:13.124Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '4F23FBCE08D03DF51EF4B5FF425D2746_element_243'
+}
+2023-09-15T12:34:13.125Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+2023-09-15T12:34:13.125Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/execute/sync
+2023-09-15T12:34:13.125Z INFO webdriver: DATA {
+  script: 'isElementDisplayed(...) [8007 bytes]',
+  args: [
+    {
+      'element-6066-11e4-a52e-4f735466cecf': '4F23FBCE08D03DF51EF4B5FF425D2746_element_243',
+      ELEMENT: '4F23FBCE08D03DF51EF4B5FF425D2746_element_243'
+    }
+  ]
+}
+2023-09-15T12:34:13.128Z INFO webdriver: RESULT true
+2023-09-15T12:34:13.128Z INFO webdriver: COMMAND getElementText("4F23FBCE08D03DF51EF4B5FF425D2746_element_243")
+2023-09-15T12:34:13.128Z INFO webdriver: [GET] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element/4F23FBCE08D03DF51EF4B5FF425D2746_element_243/text
+2023-09-15T12:34:13.135Z INFO webdriver: RESULT "smartwatches"
+2023-09-15T12:34:15.141Z INFO webdriver: COMMAND findElements("xpath", "//span[@class='a-expander-prompt' and text()='See more'][1]")
+2023-09-15T12:34:15.142Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/elements
+2023-09-15T12:34:15.142Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: "//span[@class='a-expander-prompt' and text()='See more'][1]"
+}
+2023-09-15T12:34:15.160Z INFO webdriver: RESULT [
+  {
+    'element-6066-11e4-a52e-4f735466cecf': '4F23FBCE08D03DF51EF4B5FF425D2746_element_246'
+  },
+  {
+    'element-6066-11e4-a52e-4f735466cecf': '4F23FBCE08D03DF51EF4B5FF425D2746_element_247'
+  },
+  {
+    'element-6066-11e4-a52e-4f735466cecf': '4F23FBCE08D03DF51EF4B5FF425D2746_element_248'
+  },
+  {
+    'element-6066-11e4-a52e-4f735466cecf': '4F23FBCE08D03DF51EF4B5FF425D2746_element_249'
+  },
+  {
+    'element-6066-11e4-a52e-4f735466cecf': '4F23FBCE08D03DF51EF4B5FF425D2746_element_250'
+  }
+]
+2023-09-15T12:34:15.164Z INFO webdriver: COMMAND findElement("xpath", "//span[@class='a-expander-prompt' and text()='See more'][1]")
+2023-09-15T12:34:15.164Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element
+2023-09-15T12:34:15.164Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: "//span[@class='a-expander-prompt' and text()='See more'][1]"
+}
+2023-09-15T12:34:15.175Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '4F23FBCE08D03DF51EF4B5FF425D2746_element_246'
+}
+2023-09-15T12:34:15.176Z INFO webdriver: COMMAND elementClick("4F23FBCE08D03DF51EF4B5FF425D2746_element_246")
+2023-09-15T12:34:15.176Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element/4F23FBCE08D03DF51EF4B5FF425D2746_element_246/click
+2023-09-15T12:35:19.535Z INFO webdriver: RESULT null
+2023-09-15T12:35:19.537Z INFO webdriver: COMMAND findElement("xpath", "//span[text()='Amazfit']")
+2023-09-15T12:35:19.538Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element
+2023-09-15T12:35:19.538Z INFO webdriver: DATA { using: 'xpath', value: "//span[text()='Amazfit']" }
+2023-09-15T12:35:19.549Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '4F23FBCE08D03DF51EF4B5FF425D2746_element_253'
+}
+2023-09-15T12:35:19.551Z INFO webdriver: COMMAND getElementRect("4F23FBCE08D03DF51EF4B5FF425D2746_element_253")
+2023-09-15T12:35:19.551Z INFO webdriver: [GET] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element/4F23FBCE08D03DF51EF4B5FF425D2746_element_253/rect
+2023-09-15T12:35:19.557Z INFO webdriver: RESULT { height: 20, width: 47, x: 573.265625, y: 118 }
+2023-09-15T12:35:19.557Z INFO webdriver: COMMAND getWindowRect()
+2023-09-15T12:35:19.557Z INFO webdriver: [GET] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/window/rect
+2023-09-15T12:35:19.559Z INFO webdriver: RESULT { height: 800, width: 1280, x: 92, y: 60 }
+2023-09-15T12:35:19.559Z INFO webdriver: COMMAND executeScript("return (() => [
+        window.scrollX, window.scrollY
+    ]).apply(null, arguments)", <object>)
+2023-09-15T12:35:19.559Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/execute/sync
+2023-09-15T12:35:19.559Z INFO webdriver: DATA {
+  script: 'return (() => [\n' +
+    '        window.scrollX, window.scrollY\n' +
+    '    ]).apply(null, arguments)',
+  args: []
+}
+2023-09-15T12:35:19.562Z INFO webdriver: RESULT [ 0, 68 ]
+2023-09-15T12:35:19.562Z INFO webdriver: COMMAND performActions(<object>)
+2023-09-15T12:35:19.562Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/actions
+2023-09-15T12:35:19.562Z INFO webdriver: DATA {
+  actions: [
+    { id: 'action2', type: 'wheel', parameters: {}, actions: [Array] }
+  ]
+}
+2023-09-15T12:35:19.769Z INFO webdriver: RESULT null
+2023-09-15T12:35:19.769Z INFO webdriver: COMMAND releaseActions()
+2023-09-15T12:35:19.769Z INFO webdriver: [DELETE] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/actions
+2023-09-15T12:35:19.771Z INFO webdriver: RESULT null
+2023-09-15T12:35:19.772Z INFO webdriver: COMMAND findElements("xpath", "//span[text()='Amazfit']")
+2023-09-15T12:35:19.772Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/elements
+2023-09-15T12:35:19.772Z INFO webdriver: DATA { using: 'xpath', value: "//span[text()='Amazfit']" }
+2023-09-15T12:35:19.784Z INFO webdriver: RESULT [
+  {
+    'element-6066-11e4-a52e-4f735466cecf': '4F23FBCE08D03DF51EF4B5FF425D2746_element_253'
+  },
+  {
+    'element-6066-11e4-a52e-4f735466cecf': '4F23FBCE08D03DF51EF4B5FF425D2746_element_254'
+  }
+]
+2023-09-15T12:35:19.789Z INFO webdriver: COMMAND findElement("xpath", "//span[text()='Amazfit']")
+2023-09-15T12:35:19.789Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element
+2023-09-15T12:35:19.789Z INFO webdriver: DATA { using: 'xpath', value: "//span[text()='Amazfit']" }
+2023-09-15T12:35:19.796Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '4F23FBCE08D03DF51EF4B5FF425D2746_element_253'
+}
+2023-09-15T12:35:19.797Z INFO webdriver: COMMAND elementClick("4F23FBCE08D03DF51EF4B5FF425D2746_element_253")
+2023-09-15T12:35:19.798Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element/4F23FBCE08D03DF51EF4B5FF425D2746_element_253/click
+2023-09-15T12:35:21.975Z INFO webdriver: RESULT null
+2023-09-15T12:35:23.979Z INFO webdriver: COMMAND findElement("xpath", "//span[@class='a-size-medium a-color-base a-text-normal'][1]")
+2023-09-15T12:35:23.979Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element
+2023-09-15T12:35:23.979Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: "//span[@class='a-size-medium a-color-base a-text-normal'][1]"
+}
+2023-09-15T12:35:24.003Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'E90CC54EECF919E0AD52DE81EC3BC600_element_330'
+}
+2023-09-15T12:35:24.005Z INFO webdriver: COMMAND getElementProperty("E90CC54EECF919E0AD52DE81EC3BC600_element_330", "value")
+2023-09-15T12:35:24.005Z INFO webdriver: [GET] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element/E90CC54EECF919E0AD52DE81EC3BC600_element_330/property/value
+2023-09-15T12:35:24.009Z INFO webdriver: RESULT null
+2023-09-15T12:35:24.009Z INFO webdriver: COMMAND findElement("xpath", "//span[@class='a-size-medium a-color-base a-text-normal'][1]")
+2023-09-15T12:35:24.009Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element
+2023-09-15T12:35:24.009Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: "//span[@class='a-size-medium a-color-base a-text-normal'][1]"
+}
+2023-09-15T12:35:24.015Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'E90CC54EECF919E0AD52DE81EC3BC600_element_330'
+}
+2023-09-15T12:35:24.016Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+2023-09-15T12:35:24.016Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/execute/sync
+2023-09-15T12:35:24.017Z INFO webdriver: DATA {
+  script: 'isElementDisplayed(...) [8007 bytes]',
+  args: [
+    {
+      'element-6066-11e4-a52e-4f735466cecf': 'E90CC54EECF919E0AD52DE81EC3BC600_element_330',
+      ELEMENT: 'E90CC54EECF919E0AD52DE81EC3BC600_element_330'
+    }
+  ]
+}
+2023-09-15T12:35:24.021Z INFO webdriver: RESULT true
+2023-09-15T12:35:24.021Z INFO webdriver: COMMAND getElementText("E90CC54EECF919E0AD52DE81EC3BC600_element_330")
+2023-09-15T12:35:24.021Z INFO webdriver: [GET] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element/E90CC54EECF919E0AD52DE81EC3BC600_element_330/text
+2023-09-15T12:35:24.029Z INFO webdriver: RESULT Amazfit Bip 3 Smart Watch for Android iPhone, Health Fitness Tracker with 1.69" Large Display,14-Day Battery Life, 60+ Sports Modes, Blood Oxygen Heart Rate Monitor, 5 ATM Water-resistant (Black)
+2023-09-15T12:35:26.033Z INFO webdriver: COMMAND findElements("xpath", "//span[@class='a-dropdown-label']/parent::*")
+2023-09-15T12:35:26.033Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/elements
+2023-09-15T12:35:26.033Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: "//span[@class='a-dropdown-label']/parent::*"
+}
+2023-09-15T12:35:26.048Z INFO webdriver: RESULT [
+  {
+    'element-6066-11e4-a52e-4f735466cecf': 'E90CC54EECF919E0AD52DE81EC3BC600_element_331'
+  }
+]
+2023-09-15T12:35:26.051Z INFO webdriver: COMMAND findElement("xpath", "//span[@class='a-dropdown-label']/parent::*")
+2023-09-15T12:35:26.051Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element
+2023-09-15T12:35:26.051Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: "//span[@class='a-dropdown-label']/parent::*"
+}
+2023-09-15T12:35:26.091Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'E90CC54EECF919E0AD52DE81EC3BC600_element_331'
+}
+2023-09-15T12:35:26.093Z INFO webdriver: COMMAND elementClick("E90CC54EECF919E0AD52DE81EC3BC600_element_331")
+2023-09-15T12:35:26.093Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element/E90CC54EECF919E0AD52DE81EC3BC600_element_331/click
+2023-09-15T12:35:26.117Z INFO webdriver: RESULT null
+2023-09-15T12:35:26.117Z INFO webdriver: COMMAND findElements("xpath", "//a[text()='Price: High to Low']")
+2023-09-15T12:35:26.117Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/elements
+2023-09-15T12:35:26.117Z INFO webdriver: DATA { using: 'xpath', value: "//a[text()='Price: High to Low']" }
+2023-09-15T12:35:26.123Z INFO webdriver: RESULT [
+  {
+    'element-6066-11e4-a52e-4f735466cecf': 'E90CC54EECF919E0AD52DE81EC3BC600_element_332'
+  }
+]
+2023-09-15T12:35:26.124Z INFO webdriver: COMMAND findElement("xpath", "//a[text()='Price: High to Low']")
+2023-09-15T12:35:26.124Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element
+2023-09-15T12:35:26.124Z INFO webdriver: DATA { using: 'xpath', value: "//a[text()='Price: High to Low']" }
+2023-09-15T12:35:26.129Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'E90CC54EECF919E0AD52DE81EC3BC600_element_332'
+}
+2023-09-15T12:35:26.129Z INFO webdriver: COMMAND elementClick("E90CC54EECF919E0AD52DE81EC3BC600_element_332")
+2023-09-15T12:35:26.129Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element/E90CC54EECF919E0AD52DE81EC3BC600_element_332/click
+2023-09-15T12:35:28.121Z INFO webdriver: RESULT null
+2023-09-15T12:35:30.123Z INFO webdriver: COMMAND findElements("xpath", "//span[@class='a-price-whole'][1]")
+2023-09-15T12:35:30.124Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/elements
+2023-09-15T12:35:30.124Z INFO webdriver: DATA { using: 'xpath', value: "//span[@class='a-price-whole'][1]" }
+2023-09-15T12:35:30.138Z INFO webdriver: RESULT [
+  {
+    'element-6066-11e4-a52e-4f735466cecf': 'C34DA4EDD0FAC5A3996B25F189954CD1_element_374'
+  },
+  {
+    'element-6066-11e4-a52e-4f735466cecf': 'C34DA4EDD0FAC5A3996B25F189954CD1_element_375'
+  },
+  {
+    'element-6066-11e4-a52e-4f735466cecf': 'C34DA4EDD0FAC5A3996B25F189954CD1_element_376'
+  },
+  {
+    'element-6066-11e4-a52e-4f735466cecf': 'C34DA4EDD0FAC5A3996B25F189954CD1_element_377'
+  },
+  {
+    'element-6066-11e4-a52e-4f735466cecf': 'C34DA4EDD0FAC5A3996B25F189954CD1_element_378'
+  },
+  {
+    'element-6066-11e4-a52e-4f735466cecf': 'C34DA4EDD0FAC5A3996B25F189954CD1_element_379'
+  },
+  {
+    'element-6066-11e4-a52e-4f735466cecf': 'C34DA4EDD0FAC5A3996B25F189954CD1_element_380'
+  },
+  {
+    'element-6066-11e4-a52e-4f735466cecf': 'C34DA4EDD0FAC5A3996B25F189954CD1_element_381'
+  },
+  {
+    'element-6066-11e4-a52e-4f735466cecf': 'C34DA4EDD0FAC5A3996B25F189954CD1_element_382'
+  },
+  {
+    'element-6066-11e4-a52e-4f735466cecf': 'C34DA4EDD0FAC5A3996B25F189954CD1_element_383'
+  },
+  {
+    'element-6066-11e4-a52e-4f735466cecf': 'C34DA4EDD0FAC5A3996B25F189954CD1_element_384'
+  },
+  {
+    'element-6066-11e4-a52e-4f735466cecf': 'C34DA4EDD0FAC5A3996B25F189954CD1_element_385'
+  },
+  {
+    'element-6066-11e4-a52e-4f735466cecf': 'C34DA4EDD0FAC5A3996B25F189954CD1_element_386'
+  },
+  {
+    'element-6066-11e4-a52e-4f735466cecf': 'C34DA4EDD0FAC5A3996B25F189954CD1_element_387'
+  },
+  {
+    'element-6066-11e4-a52e-4f735466cecf': 'C34DA4EDD0FAC5A3996B25F189954CD1_element_388'
+  },
+  {
+    'element-6066-11e4-a52e-4f735466cecf': 'C34DA4EDD0FAC5A3996B25F189954CD1_element_389'
+  },
+  {
+    'element-6066-11e4-a52e-4f735466cecf': 'C34DA4EDD0FAC5A3996B25F189954CD1_element_390'
+  },
+  {
+    'element-6066-11e4-a52e-4f735466cecf': 'C34DA4EDD0FAC5A3996B25F189954CD1_element_391'
+  },
+  {
+    'element-6066-11e4-a52e-4f735466cecf': 'C34DA4EDD0FAC5A3996B25F189954CD1_element_392'
+  },
+  {
+    'element-6066-11e4-a52e-4f735466cecf': 'C34DA4EDD0FAC5A3996B25F189954CD1_element_393'
+  }
+]
+2023-09-15T12:35:30.145Z INFO webdriver: COMMAND findElement("xpath", "//span[@class='a-price-whole'][1]")
+2023-09-15T12:35:30.146Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element
+2023-09-15T12:35:30.146Z INFO webdriver: DATA { using: 'xpath', value: "//span[@class='a-price-whole'][1]" }
+2023-09-15T12:35:30.153Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'C34DA4EDD0FAC5A3996B25F189954CD1_element_374'
+}
+2023-09-15T12:35:30.154Z INFO webdriver: COMMAND elementClick("C34DA4EDD0FAC5A3996B25F189954CD1_element_374")
+2023-09-15T12:35:30.154Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element/C34DA4EDD0FAC5A3996B25F189954CD1_element_374/click
+2023-09-15T12:35:35.933Z INFO webdriver: RESULT null
+2023-09-15T12:35:35.934Z INFO webdriver: COMMAND findElement("css selector", "#breadcrumb-back-link")
+2023-09-15T12:35:35.934Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element
+2023-09-15T12:35:35.934Z INFO webdriver: DATA { using: 'css selector', value: '#breadcrumb-back-link' }
+2023-09-15T12:35:35.939Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'E775C48EC2018F7F396EAFDC9E998D2B_element_397'
+}
+2023-09-15T12:35:35.941Z INFO webdriver: COMMAND findElements("css selector", "#breadcrumb-back-link")
+2023-09-15T12:35:35.941Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/elements
+2023-09-15T12:35:35.941Z INFO webdriver: DATA { using: 'css selector', value: '#breadcrumb-back-link' }
+2023-09-15T12:35:35.946Z INFO webdriver: RESULT [
+  {
+    'element-6066-11e4-a52e-4f735466cecf': 'E775C48EC2018F7F396EAFDC9E998D2B_element_397'
+  }
+]
+2023-09-15T12:35:35.947Z INFO webdriver: COMMAND findElements("css selector", "#add-to-cart-button")
+2023-09-15T12:35:35.947Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/elements
+2023-09-15T12:35:35.947Z INFO webdriver: DATA { using: 'css selector', value: '#add-to-cart-button' }
+2023-09-15T12:35:35.952Z INFO webdriver: RESULT [
+  {
+    'element-6066-11e4-a52e-4f735466cecf': 'E775C48EC2018F7F396EAFDC9E998D2B_element_398'
+  }
+]
+2023-09-15T12:35:35.953Z INFO webdriver: COMMAND findElement("css selector", "#add-to-cart-button")
+2023-09-15T12:35:35.953Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element
+2023-09-15T12:35:35.953Z INFO webdriver: DATA { using: 'css selector', value: '#add-to-cart-button' }
+2023-09-15T12:35:35.958Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'E775C48EC2018F7F396EAFDC9E998D2B_element_398'
+}
+2023-09-15T12:35:35.959Z INFO webdriver: COMMAND elementClick("E775C48EC2018F7F396EAFDC9E998D2B_element_398")
+2023-09-15T12:35:35.959Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element/E775C48EC2018F7F396EAFDC9E998D2B_element_398/click
+2023-09-15T12:35:38.896Z INFO webdriver: RESULT null
+2023-09-15T12:35:40.900Z INFO webdriver: COMMAND findElements("css selector", "#nav-cart")
+2023-09-15T12:35:40.901Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/elements
+2023-09-15T12:35:40.901Z INFO webdriver: DATA { using: 'css selector', value: '#nav-cart' }
+2023-09-15T12:35:40.915Z INFO webdriver: RESULT [
+  {
+    'element-6066-11e4-a52e-4f735466cecf': '6804380EA5B1461C91B04408622A4789_element_402'
+  }
+]
+2023-09-15T12:35:40.918Z INFO webdriver: COMMAND findElement("css selector", "#nav-cart")
+2023-09-15T12:35:40.918Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element
+2023-09-15T12:35:40.918Z INFO webdriver: DATA { using: 'css selector', value: '#nav-cart' }
+2023-09-15T12:35:40.927Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '6804380EA5B1461C91B04408622A4789_element_402'
+}
+2023-09-15T12:35:40.928Z INFO webdriver: COMMAND elementClick("6804380EA5B1461C91B04408622A4789_element_402")
+2023-09-15T12:35:40.928Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element/6804380EA5B1461C91B04408622A4789_element_402/click
+2023-09-15T12:35:41.859Z INFO webdriver: RESULT null
+2023-09-15T12:35:41.859Z INFO webdriver: COMMAND findElement("xpath", "//div[@class='a-row sc-cart-header']/div/h1")
+2023-09-15T12:35:41.859Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element
+2023-09-15T12:35:41.859Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: "//div[@class='a-row sc-cart-header']/div/h1"
+}
+2023-09-15T12:35:41.865Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '93E515A7317678EFDF9E780E820A57F4_element_404'
+}
+2023-09-15T12:35:41.866Z INFO webdriver: COMMAND getElementProperty("93E515A7317678EFDF9E780E820A57F4_element_404", "value")
+2023-09-15T12:35:41.866Z INFO webdriver: [GET] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element/93E515A7317678EFDF9E780E820A57F4_element_404/property/value
+2023-09-15T12:35:41.869Z INFO webdriver: RESULT null
+2023-09-15T12:35:41.869Z INFO webdriver: COMMAND findElement("xpath", "//div[@class='a-row sc-cart-header']/div/h1")
+2023-09-15T12:35:41.869Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element
+2023-09-15T12:35:41.869Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: "//div[@class='a-row sc-cart-header']/div/h1"
+}
+2023-09-15T12:35:41.872Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '93E515A7317678EFDF9E780E820A57F4_element_404'
+}
+2023-09-15T12:35:41.873Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+2023-09-15T12:35:41.873Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/execute/sync
+2023-09-15T12:35:41.873Z INFO webdriver: DATA {
+  script: 'isElementDisplayed(...) [8007 bytes]',
+  args: [
+    {
+      'element-6066-11e4-a52e-4f735466cecf': '93E515A7317678EFDF9E780E820A57F4_element_404',
+      ELEMENT: '93E515A7317678EFDF9E780E820A57F4_element_404'
+    }
+  ]
+}
+2023-09-15T12:35:41.876Z INFO webdriver: RESULT true
+2023-09-15T12:35:41.876Z INFO webdriver: COMMAND getElementText("93E515A7317678EFDF9E780E820A57F4_element_404")
+2023-09-15T12:35:41.876Z INFO webdriver: [GET] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element/93E515A7317678EFDF9E780E820A57F4_element_404/text
+2023-09-15T12:35:41.884Z INFO webdriver: RESULT Shopping Cart
+2023-09-15T12:35:41.884Z INFO webdriver: COMMAND findElement("xpath", "//div[@class='a-row sc-cart-header']/div/h1")
+2023-09-15T12:35:41.885Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element
+2023-09-15T12:35:41.885Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: "//div[@class='a-row sc-cart-header']/div/h1"
+}
+2023-09-15T12:35:41.890Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '93E515A7317678EFDF9E780E820A57F4_element_404'
+}
+2023-09-15T12:35:41.891Z INFO webdriver: COMMAND getElementProperty("93E515A7317678EFDF9E780E820A57F4_element_404", "value")
+2023-09-15T12:35:41.891Z INFO webdriver: [GET] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element/93E515A7317678EFDF9E780E820A57F4_element_404/property/value
+2023-09-15T12:35:41.894Z INFO webdriver: RESULT null
+2023-09-15T12:35:41.894Z INFO webdriver: COMMAND findElement("xpath", "//div[@class='a-row sc-cart-header']/div/h1")
+2023-09-15T12:35:41.894Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element
+2023-09-15T12:35:41.894Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: "//div[@class='a-row sc-cart-header']/div/h1"
+}
+2023-09-15T12:35:41.897Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '93E515A7317678EFDF9E780E820A57F4_element_404'
+}
+2023-09-15T12:35:41.898Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+2023-09-15T12:35:41.898Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/execute/sync
+2023-09-15T12:35:41.898Z INFO webdriver: DATA {
+  script: 'isElementDisplayed(...) [8007 bytes]',
+  args: [
+    {
+      'element-6066-11e4-a52e-4f735466cecf': '93E515A7317678EFDF9E780E820A57F4_element_404',
+      ELEMENT: '93E515A7317678EFDF9E780E820A57F4_element_404'
+    }
+  ]
+}
+2023-09-15T12:35:41.902Z INFO webdriver: RESULT true
+2023-09-15T12:35:41.902Z INFO webdriver: COMMAND getElementText("93E515A7317678EFDF9E780E820A57F4_element_404")
+2023-09-15T12:35:41.902Z INFO webdriver: [GET] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element/93E515A7317678EFDF9E780E820A57F4_element_404/text
+2023-09-15T12:35:41.906Z INFO webdriver: RESULT Shopping Cart
+2023-09-15T12:35:41.907Z INFO webdriver: COMMAND findElements("xpath", "//input[@value='Delete']")
+2023-09-15T12:35:41.907Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/elements
+2023-09-15T12:35:41.907Z INFO webdriver: DATA { using: 'xpath', value: "//input[@value='Delete']" }
+2023-09-15T12:35:41.912Z INFO webdriver: RESULT [
+  {
+    'element-6066-11e4-a52e-4f735466cecf': '93E515A7317678EFDF9E780E820A57F4_element_405'
+  }
+]
+2023-09-15T12:35:41.913Z INFO webdriver: COMMAND findElement("xpath", "//input[@value='Delete']")
+2023-09-15T12:35:41.913Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element
+2023-09-15T12:35:41.913Z INFO webdriver: DATA { using: 'xpath', value: "//input[@value='Delete']" }
+2023-09-15T12:35:41.919Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '93E515A7317678EFDF9E780E820A57F4_element_405'
+}
+2023-09-15T12:35:41.919Z INFO webdriver: COMMAND elementClick("93E515A7317678EFDF9E780E820A57F4_element_405")
+2023-09-15T12:35:41.919Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element/93E515A7317678EFDF9E780E820A57F4_element_405/click
+2023-09-15T12:35:42.860Z INFO webdriver: RESULT null
+2023-09-15T12:35:44.862Z INFO webdriver: COMMAND findElement("xpath", "//div[@class='a-row sc-cart-header']/div/h1")
+2023-09-15T12:35:44.862Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element
+2023-09-15T12:35:44.862Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: "//div[@class='a-row sc-cart-header']/div/h1"
+}
+2023-09-15T12:35:44.873Z INFO webdriver: RESULT {
+  error: 'no such element',
+  message: `no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='a-row sc-cart-header']/div/h1"}\n` +
+    '  (Session info: chrome=116.0.5845.187)',
+  stacktrace: '0   chromedriver                        0x000000010446665c chromedriver + 4318812\n' +
+    '1   chromedriver                        0x000000010445ed00 chromedriver + 4287744\n' +
+    '2   chromedriver                        0x00000001040907ec chromedriver + 296940\n' +
+    '3   chromedriver                        0x00000001040ce048 chromedriver + 548936\n' +
+    '4   chromedriver                        0x0000000104106d28 chromedriver + 781608\n' +
+    '5   chromedriver                        0x00000001040c2178 chromedriver + 500088\n' +
+    '6   chromedriver                        0x00000001040c2fc0 chromedriver + 503744\n' +
+    '7   chromedriver                        0x0000000104426c40 chromedriver + 4058176\n' +
+    '8   chromedriver                        0x000000010442b160 chromedriver + 4075872\n' +
+    '9   chromedriver                        0x00000001043eee68 chromedriver + 3829352\n' +
+    '10  chromedriver                        0x000000010442bc4c chromedriver + 4078668\n' +
+    '11  chromedriver                        0x0000000104403f08 chromedriver + 3915528\n' +
+    '12  chromedriver                        0x0000000104448140 chromedriver + 4194624\n' +
+    '13  chromedriver                        0x00000001044482c4 chromedriver + 4195012\n' +
+    '14  chromedriver                        0x00000001044584d0 chromedriver + 4261072\n' +
+    '15  libsystem_pthread.dylib             0x000000018697a06c _pthread_start + 148\n' +
+    '16  libsystem_pthread.dylib             0x0000000186974e2c thread_start + 8\n'
+}
+2023-09-15T12:35:44.874Z INFO webdriver: COMMAND findElements("xpath", "//div[@class='a-row sc-cart-header']/div/h1")
+2023-09-15T12:35:44.874Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/elements
+2023-09-15T12:35:44.874Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: "//div[@class='a-row sc-cart-header']/div/h1"
+}
+2023-09-15T12:35:44.880Z INFO webdriver: RESULT []
+2023-09-15T12:35:45.375Z INFO webdriver: COMMAND findElements("xpath", "//div[@class='a-row sc-cart-header']/div/h1")
+2023-09-15T12:35:45.376Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/elements
+2023-09-15T12:35:45.376Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: "//div[@class='a-row sc-cart-header']/div/h1"
+}
+2023-09-15T12:35:45.393Z INFO webdriver: RESULT []
+2023-09-15T12:35:45.878Z INFO webdriver: COMMAND findElements("xpath", "//div[@class='a-row sc-cart-header']/div/h1")
+2023-09-15T12:35:45.879Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/elements
+2023-09-15T12:35:45.879Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: "//div[@class='a-row sc-cart-header']/div/h1"
+}
+2023-09-15T12:35:45.895Z INFO webdriver: RESULT []
+2023-09-15T12:35:46.376Z INFO webdriver: COMMAND findElements("xpath", "//div[@class='a-row sc-cart-header']/div/h1")
+2023-09-15T12:35:46.379Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/elements
+2023-09-15T12:35:46.379Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: "//div[@class='a-row sc-cart-header']/div/h1"
+}
+2023-09-15T12:35:46.393Z INFO webdriver: RESULT []
+2023-09-15T12:35:46.876Z INFO webdriver: COMMAND findElements("xpath", "//div[@class='a-row sc-cart-header']/div/h1")
+2023-09-15T12:35:46.877Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/elements
+2023-09-15T12:35:46.877Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: "//div[@class='a-row sc-cart-header']/div/h1"
+}
+2023-09-15T12:35:46.892Z INFO webdriver: RESULT []
+2023-09-15T12:35:47.376Z INFO webdriver: COMMAND findElements("xpath", "//div[@class='a-row sc-cart-header']/div/h1")
+2023-09-15T12:35:47.376Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/elements
+2023-09-15T12:35:47.376Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: "//div[@class='a-row sc-cart-header']/div/h1"
+}
+2023-09-15T12:35:47.393Z INFO webdriver: RESULT []
+2023-09-15T12:35:47.875Z INFO webdriver: COMMAND findElements("xpath", "//div[@class='a-row sc-cart-header']/div/h1")
+2023-09-15T12:35:47.876Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/elements
+2023-09-15T12:35:47.876Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: "//div[@class='a-row sc-cart-header']/div/h1"
+}
+2023-09-15T12:35:47.890Z INFO webdriver: RESULT []
+2023-09-15T12:35:48.377Z INFO webdriver: COMMAND findElements("xpath", "//div[@class='a-row sc-cart-header']/div/h1")
+2023-09-15T12:35:48.378Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/elements
+2023-09-15T12:35:48.378Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: "//div[@class='a-row sc-cart-header']/div/h1"
+}
+2023-09-15T12:35:48.393Z INFO webdriver: RESULT []
+2023-09-15T12:35:48.875Z INFO webdriver: COMMAND findElements("xpath", "//div[@class='a-row sc-cart-header']/div/h1")
+2023-09-15T12:35:48.876Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/elements
+2023-09-15T12:35:48.876Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: "//div[@class='a-row sc-cart-header']/div/h1"
+}
+2023-09-15T12:35:48.888Z INFO webdriver: RESULT []
+2023-09-15T12:35:49.376Z INFO webdriver: COMMAND findElements("xpath", "//div[@class='a-row sc-cart-header']/div/h1")
+2023-09-15T12:35:49.376Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/elements
+2023-09-15T12:35:49.376Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: "//div[@class='a-row sc-cart-header']/div/h1"
+}
+2023-09-15T12:35:49.389Z INFO webdriver: RESULT []
+2023-09-15T12:35:49.875Z INFO webdriver: COMMAND findElements("xpath", "//div[@class='a-row sc-cart-header']/div/h1")
+2023-09-15T12:35:49.876Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/elements
+2023-09-15T12:35:49.876Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: "//div[@class='a-row sc-cart-header']/div/h1"
+}
+2023-09-15T12:35:49.890Z INFO webdriver: RESULT []
+2023-09-15T12:35:50.376Z INFO webdriver: COMMAND findElements("xpath", "//div[@class='a-row sc-cart-header']/div/h1")
+2023-09-15T12:35:50.376Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/elements
+2023-09-15T12:35:50.376Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: "//div[@class='a-row sc-cart-header']/div/h1"
+}
+2023-09-15T12:35:50.390Z INFO webdriver: RESULT []
+2023-09-15T12:35:50.876Z INFO webdriver: COMMAND findElements("xpath", "//div[@class='a-row sc-cart-header']/div/h1")
+2023-09-15T12:35:50.877Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/elements
+2023-09-15T12:35:50.877Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: "//div[@class='a-row sc-cart-header']/div/h1"
+}
+2023-09-15T12:35:50.892Z INFO webdriver: RESULT []
+2023-09-15T12:35:51.376Z INFO webdriver: COMMAND findElements("xpath", "//div[@class='a-row sc-cart-header']/div/h1")
+2023-09-15T12:35:51.376Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/elements
+2023-09-15T12:35:51.376Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: "//div[@class='a-row sc-cart-header']/div/h1"
+}
+2023-09-15T12:35:51.393Z INFO webdriver: RESULT []
+2023-09-15T12:35:51.875Z INFO webdriver: COMMAND findElements("xpath", "//div[@class='a-row sc-cart-header']/div/h1")
+2023-09-15T12:35:51.876Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/elements
+2023-09-15T12:35:51.876Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: "//div[@class='a-row sc-cart-header']/div/h1"
+}
+2023-09-15T12:35:51.890Z INFO webdriver: RESULT []
+2023-09-15T12:35:52.376Z INFO webdriver: COMMAND findElements("xpath", "//div[@class='a-row sc-cart-header']/div/h1")
+2023-09-15T12:35:52.377Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/elements
+2023-09-15T12:35:52.377Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: "//div[@class='a-row sc-cart-header']/div/h1"
+}
+2023-09-15T12:35:52.391Z INFO webdriver: RESULT []
+2023-09-15T12:35:52.876Z INFO webdriver: COMMAND findElements("xpath", "//div[@class='a-row sc-cart-header']/div/h1")
+2023-09-15T12:35:52.877Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/elements
+2023-09-15T12:35:52.877Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: "//div[@class='a-row sc-cart-header']/div/h1"
+}
+2023-09-15T12:35:52.891Z INFO webdriver: RESULT []
+2023-09-15T12:35:53.376Z INFO webdriver: COMMAND findElements("xpath", "//div[@class='a-row sc-cart-header']/div/h1")
+2023-09-15T12:35:53.376Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/elements
+2023-09-15T12:35:53.376Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: "//div[@class='a-row sc-cart-header']/div/h1"
+}
+2023-09-15T12:35:53.392Z INFO webdriver: RESULT []
+2023-09-15T12:35:53.874Z INFO webdriver: COMMAND findElements("xpath", "//div[@class='a-row sc-cart-header']/div/h1")
+2023-09-15T12:35:53.875Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/elements
+2023-09-15T12:35:53.875Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: "//div[@class='a-row sc-cart-header']/div/h1"
+}
+2023-09-15T12:35:53.885Z INFO webdriver: RESULT []
+2023-09-15T12:35:54.376Z INFO webdriver: COMMAND findElements("xpath", "//div[@class='a-row sc-cart-header']/div/h1")
+2023-09-15T12:35:54.377Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/elements
+2023-09-15T12:35:54.377Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: "//div[@class='a-row sc-cart-header']/div/h1"
+}
+2023-09-15T12:35:54.392Z INFO webdriver: RESULT []
+2023-09-15T12:35:54.894Z INFO webdriver: COMMAND navigateTo("https://www.amazon.com/")
+2023-09-15T12:35:54.894Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/url
+2023-09-15T12:35:54.894Z INFO webdriver: DATA { url: 'https://www.amazon.com/' }
+2023-09-15T12:35:55.910Z INFO webdriver: RESULT null
+2023-09-15T12:35:55.912Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+2023-09-15T12:35:55.912Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+2023-09-15T12:35:55.912Z INFO webdriver: COMMAND deleteAllCookies()
+2023-09-15T12:35:55.912Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/execute/sync
+2023-09-15T12:35:55.912Z INFO webdriver: DATA {
+  script: 'return (function () {\n' +
+    '            localStorage.clear();\n' +
+    '        }).apply(null, arguments)',
+  args: []
+}
+2023-09-15T12:35:55.912Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/execute/sync
+2023-09-15T12:35:55.912Z INFO webdriver: DATA {
+  script: 'return (function () {\n' +
+    '            sessionStorage.clear();\n' +
+    '        }).apply(null, arguments)',
+  args: []
+}
+2023-09-15T12:35:55.912Z INFO webdriver: [DELETE] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/cookie
+2023-09-15T12:35:55.913Z INFO webdriver: COMMAND getUrl()
+2023-09-15T12:35:55.913Z INFO webdriver: [GET] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/url
+2023-09-15T12:35:55.992Z INFO webdriver: RESULT null
+2023-09-15T12:35:56.015Z INFO webdriver: RESULT null
+2023-09-15T12:35:56.023Z INFO webdriver: RESULT null
+2023-09-15T12:35:56.024Z INFO webdriver: RESULT https://www.amazon.com/
+2023-09-15T12:35:56.025Z INFO webdriver: COMMAND getTitle()
+2023-09-15T12:35:56.025Z INFO webdriver: [GET] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/title
+2023-09-15T12:35:56.028Z INFO webdriver: RESULT Amazon.com. Spend less. Smile more.
+2023-09-15T12:35:56.028Z INFO webdriver: COMMAND findElement("xpath", "//input[@name='field-keywords']")
+2023-09-15T12:35:56.028Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element
+2023-09-15T12:35:56.028Z INFO webdriver: DATA { using: 'xpath', value: "//input[@name='field-keywords']" }
+2023-09-15T12:35:56.038Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'C15252A434C73B135E4C4E881BA0A81E_element_430'
+}
+2023-09-15T12:35:56.039Z INFO webdriver: COMMAND findElements("xpath", "//input[@name='field-keywords']")
+2023-09-15T12:35:56.039Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/elements
+2023-09-15T12:35:56.039Z INFO webdriver: DATA { using: 'xpath', value: "//input[@name='field-keywords']" }
+2023-09-15T12:35:56.045Z INFO webdriver: RESULT [
+  {
+    'element-6066-11e4-a52e-4f735466cecf': 'C15252A434C73B135E4C4E881BA0A81E_element_430'
+  }
+]
+2023-09-15T12:35:56.046Z INFO webdriver: COMMAND findElements("xpath", "//input[@name='field-keywords']")
+2023-09-15T12:35:56.046Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/elements
+2023-09-15T12:35:56.046Z INFO webdriver: DATA { using: 'xpath', value: "//input[@name='field-keywords']" }
+2023-09-15T12:35:56.049Z INFO webdriver: RESULT [
+  {
+    'element-6066-11e4-a52e-4f735466cecf': 'C15252A434C73B135E4C4E881BA0A81E_element_430'
+  }
+]
+2023-09-15T12:35:56.050Z INFO webdriver: COMMAND findElement("xpath", "//input[@name='field-keywords']")
+2023-09-15T12:35:56.051Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element
+2023-09-15T12:35:56.051Z INFO webdriver: DATA { using: 'xpath', value: "//input[@name='field-keywords']" }
+2023-09-15T12:35:56.054Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'C15252A434C73B135E4C4E881BA0A81E_element_430'
+}
+2023-09-15T12:35:56.055Z INFO webdriver: COMMAND elementClick("C15252A434C73B135E4C4E881BA0A81E_element_430")
+2023-09-15T12:35:56.055Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element/C15252A434C73B135E4C4E881BA0A81E_element_430/click
+2023-09-15T12:35:56.105Z INFO webdriver: RESULT null
+2023-09-15T12:35:56.106Z INFO webdriver: COMMAND findElements("xpath", "//input[@name='field-keywords']")
+2023-09-15T12:35:56.106Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/elements
+2023-09-15T12:35:56.106Z INFO webdriver: DATA { using: 'xpath', value: "//input[@name='field-keywords']" }
+2023-09-15T12:35:56.120Z INFO webdriver: RESULT [
+  {
+    'element-6066-11e4-a52e-4f735466cecf': 'C15252A434C73B135E4C4E881BA0A81E_element_430'
+  }
+]
+2023-09-15T12:35:56.122Z INFO webdriver: COMMAND findElement("xpath", "//input[@name='field-keywords']")
+2023-09-15T12:35:56.122Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element
+2023-09-15T12:35:56.122Z INFO webdriver: DATA { using: 'xpath', value: "//input[@name='field-keywords']" }
+2023-09-15T12:35:56.127Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'C15252A434C73B135E4C4E881BA0A81E_element_430'
+}
+2023-09-15T12:35:56.128Z INFO webdriver: COMMAND elementClear("C15252A434C73B135E4C4E881BA0A81E_element_430")
+2023-09-15T12:35:56.128Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element/C15252A434C73B135E4C4E881BA0A81E_element_430/clear
+2023-09-15T12:35:56.147Z INFO webdriver: RESULT null
+2023-09-15T12:35:56.148Z INFO webdriver: COMMAND elementSendKeys("C15252A434C73B135E4C4E881BA0A81E_element_430", "<Screenshot[base64]>")
+2023-09-15T12:35:56.148Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element/C15252A434C73B135E4C4E881BA0A81E_element_430/value
+2023-09-15T12:35:56.148Z INFO webdriver: DATA { text: 'smartwatches' }
+2023-09-15T12:35:56.176Z INFO webdriver: RESULT null
+2023-09-15T12:35:56.177Z INFO webdriver: COMMAND performActions(<object>)
+2023-09-15T12:35:56.178Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/actions
+2023-09-15T12:35:56.178Z INFO webdriver: DATA {
+  actions: [ { id: 'action3', type: 'key', parameters: {}, actions: [Array] } ]
+}
+2023-09-15T12:35:59.586Z INFO webdriver: RESULT null
+2023-09-15T12:35:59.586Z INFO webdriver: COMMAND releaseActions()
+2023-09-15T12:35:59.586Z INFO webdriver: [DELETE] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/actions
+2023-09-15T12:35:59.591Z INFO webdriver: RESULT null
+2023-09-15T12:35:59.592Z INFO webdriver: COMMAND findElement("xpath", "//span[@class='a-color-state a-text-bold']")
+2023-09-15T12:35:59.592Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element
+2023-09-15T12:35:59.592Z INFO webdriver: DATA { using: 'xpath', value: "//span[@class='a-color-state a-text-bold']" }
+2023-09-15T12:35:59.605Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '0CC806EA97896E08D5A1C41991D6FE1B_element_660'
+}
+2023-09-15T12:35:59.606Z INFO webdriver: COMMAND getElementProperty("0CC806EA97896E08D5A1C41991D6FE1B_element_660", "value")
+2023-09-15T12:35:59.606Z INFO webdriver: [GET] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element/0CC806EA97896E08D5A1C41991D6FE1B_element_660/property/value
+2023-09-15T12:35:59.609Z INFO webdriver: RESULT null
+2023-09-15T12:35:59.609Z INFO webdriver: COMMAND findElement("xpath", "//span[@class='a-color-state a-text-bold']")
+2023-09-15T12:35:59.610Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element
+2023-09-15T12:35:59.610Z INFO webdriver: DATA { using: 'xpath', value: "//span[@class='a-color-state a-text-bold']" }
+2023-09-15T12:35:59.614Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '0CC806EA97896E08D5A1C41991D6FE1B_element_660'
+}
+2023-09-15T12:35:59.615Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+2023-09-15T12:35:59.615Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/execute/sync
+2023-09-15T12:35:59.615Z INFO webdriver: DATA {
+  script: 'isElementDisplayed(...) [8007 bytes]',
+  args: [
+    {
+      'element-6066-11e4-a52e-4f735466cecf': '0CC806EA97896E08D5A1C41991D6FE1B_element_660',
+      ELEMENT: '0CC806EA97896E08D5A1C41991D6FE1B_element_660'
+    }
+  ]
+}
+2023-09-15T12:35:59.618Z INFO webdriver: RESULT true
+2023-09-15T12:35:59.618Z INFO webdriver: COMMAND getElementText("0CC806EA97896E08D5A1C41991D6FE1B_element_660")
+2023-09-15T12:35:59.618Z INFO webdriver: [GET] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element/0CC806EA97896E08D5A1C41991D6FE1B_element_660/text
+2023-09-15T12:35:59.624Z INFO webdriver: RESULT "smartwatches"
+2023-09-15T12:36:01.629Z INFO webdriver: COMMAND findElements("xpath", "//span[@class='a-expander-prompt' and text()='See more'][1]")
+2023-09-15T12:36:01.629Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/elements
+2023-09-15T12:36:01.629Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: "//span[@class='a-expander-prompt' and text()='See more'][1]"
+}
+2023-09-15T12:36:01.653Z INFO webdriver: RESULT [
+  {
+    'element-6066-11e4-a52e-4f735466cecf': '0CC806EA97896E08D5A1C41991D6FE1B_element_662'
+  },
+  {
+    'element-6066-11e4-a52e-4f735466cecf': '0CC806EA97896E08D5A1C41991D6FE1B_element_663'
+  },
+  {
+    'element-6066-11e4-a52e-4f735466cecf': '0CC806EA97896E08D5A1C41991D6FE1B_element_664'
+  },
+  {
+    'element-6066-11e4-a52e-4f735466cecf': '0CC806EA97896E08D5A1C41991D6FE1B_element_665'
+  },
+  {
+    'element-6066-11e4-a52e-4f735466cecf': '0CC806EA97896E08D5A1C41991D6FE1B_element_666'
+  }
+]
+2023-09-15T12:36:01.658Z INFO webdriver: COMMAND findElement("xpath", "//span[@class='a-expander-prompt' and text()='See more'][1]")
+2023-09-15T12:36:01.659Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element
+2023-09-15T12:36:01.659Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: "//span[@class='a-expander-prompt' and text()='See more'][1]"
+}
+2023-09-15T12:36:01.672Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '0CC806EA97896E08D5A1C41991D6FE1B_element_662'
+}
+2023-09-15T12:36:01.673Z INFO webdriver: COMMAND elementClick("0CC806EA97896E08D5A1C41991D6FE1B_element_662")
+2023-09-15T12:36:01.673Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element/0CC806EA97896E08D5A1C41991D6FE1B_element_662/click
+2023-09-15T12:36:02.534Z INFO webdriver: RESULT null
+2023-09-15T12:36:02.537Z INFO webdriver: COMMAND findElement("xpath", "//span[text()='SAMSUNG']")
+2023-09-15T12:36:02.537Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element
+2023-09-15T12:36:02.537Z INFO webdriver: DATA { using: 'xpath', value: "//span[text()='SAMSUNG']" }
+2023-09-15T12:36:02.558Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '0CC806EA97896E08D5A1C41991D6FE1B_element_669'
+}
+2023-09-15T12:36:02.559Z INFO webdriver: COMMAND getElementRect("0CC806EA97896E08D5A1C41991D6FE1B_element_669")
+2023-09-15T12:36:02.560Z INFO webdriver: [GET] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element/0CC806EA97896E08D5A1C41991D6FE1B_element_669/rect
+2023-09-15T12:36:02.569Z INFO webdriver: RESULT { height: 20, width: 71, x: 400.578125, y: 118 }
+2023-09-15T12:36:02.570Z INFO webdriver: COMMAND getWindowRect()
+2023-09-15T12:36:02.570Z INFO webdriver: [GET] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/window/rect
+2023-09-15T12:36:02.571Z INFO webdriver: RESULT { height: 800, width: 1280, x: 92, y: 60 }
+2023-09-15T12:36:02.572Z INFO webdriver: COMMAND executeScript("return (() => [
+        window.scrollX, window.scrollY
+    ]).apply(null, arguments)", <object>)
+2023-09-15T12:36:02.572Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/execute/sync
+2023-09-15T12:36:02.572Z INFO webdriver: DATA {
+  script: 'return (() => [\n' +
+    '        window.scrollX, window.scrollY\n' +
+    '    ]).apply(null, arguments)',
+  args: []
+}
+2023-09-15T12:36:02.575Z INFO webdriver: RESULT [ 0, 68 ]
+2023-09-15T12:36:02.575Z INFO webdriver: COMMAND performActions(<object>)
+2023-09-15T12:36:02.575Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/actions
+2023-09-15T12:36:02.575Z INFO webdriver: DATA {
+  actions: [
+    { id: 'action4', type: 'wheel', parameters: {}, actions: [Array] }
+  ]
+}
+2023-09-15T12:36:02.786Z INFO webdriver: RESULT null
+2023-09-15T12:36:02.786Z INFO webdriver: COMMAND releaseActions()
+2023-09-15T12:36:02.787Z INFO webdriver: [DELETE] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/actions
+2023-09-15T12:36:02.793Z INFO webdriver: RESULT null
+2023-09-15T12:36:02.795Z INFO webdriver: COMMAND findElements("xpath", "//span[text()='SAMSUNG']")
+2023-09-15T12:36:02.795Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/elements
+2023-09-15T12:36:02.795Z INFO webdriver: DATA { using: 'xpath', value: "//span[text()='SAMSUNG']" }
+2023-09-15T12:36:02.807Z INFO webdriver: RESULT [
+  {
+    'element-6066-11e4-a52e-4f735466cecf': '0CC806EA97896E08D5A1C41991D6FE1B_element_669'
+  },
+  {
+    'element-6066-11e4-a52e-4f735466cecf': '0CC806EA97896E08D5A1C41991D6FE1B_element_670'
+  }
+]
+2023-09-15T12:36:02.809Z INFO webdriver: COMMAND findElement("xpath", "//span[text()='SAMSUNG']")
+2023-09-15T12:36:02.809Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element
+2023-09-15T12:36:02.809Z INFO webdriver: DATA { using: 'xpath', value: "//span[text()='SAMSUNG']" }
+2023-09-15T12:36:02.816Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '0CC806EA97896E08D5A1C41991D6FE1B_element_669'
+}
+2023-09-15T12:36:02.817Z INFO webdriver: COMMAND elementClick("0CC806EA97896E08D5A1C41991D6FE1B_element_669")
+2023-09-15T12:36:02.817Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element/0CC806EA97896E08D5A1C41991D6FE1B_element_669/click
+2023-09-15T12:36:03.881Z WARN webdriver: Request failed with status 400 due to element click intercepted: Element <span class="a-size-base a-color-base">...</span> is not clickable at point (435, 50). Other element would receive the click: <span class="a-button a-spacing-top-base a-button-primary glow-toaster-button glow-toaster-button-submit">...</span>
+  (Session info: chrome=116.0.5845.187)
+2023-09-15T12:36:03.881Z INFO webdriver: Retrying 1/3
+2023-09-15T12:36:03.881Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element/0CC806EA97896E08D5A1C41991D6FE1B_element_669/click
+2023-09-15T12:36:04.964Z WARN webdriver: Request failed with status 400 due to element click intercepted: Element <span class="a-size-base a-color-base">...</span> is not clickable at point (435, 50). Other element would receive the click: <span class="a-button a-spacing-top-base a-button-primary glow-toaster-button glow-toaster-button-submit">...</span>
+  (Session info: chrome=116.0.5845.187)
+2023-09-15T12:36:04.964Z INFO webdriver: Retrying 2/3
+2023-09-15T12:36:04.964Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element/0CC806EA97896E08D5A1C41991D6FE1B_element_669/click
+2023-09-15T12:36:06.039Z WARN webdriver: Request failed with status 400 due to element click intercepted: Element <span class="a-size-base a-color-base">...</span> is not clickable at point (435, 50). Other element would receive the click: <span class="a-button a-spacing-top-base a-button-primary glow-toaster-button glow-toaster-button-submit">...</span>
+  (Session info: chrome=116.0.5845.187)
+2023-09-15T12:36:06.039Z INFO webdriver: Retrying 3/3
+2023-09-15T12:36:06.040Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/element/0CC806EA97896E08D5A1C41991D6FE1B_element_669/click
+2023-09-15T12:36:07.085Z ERROR webdriver: Request failed with status 400 due to element click intercepted: element click intercepted: Element <span class="a-size-base a-color-base">...</span> is not clickable at point (435, 50). Other element would receive the click: <span class="a-button a-spacing-top-base a-button-primary glow-toaster-button glow-toaster-button-submit">...</span>
+  (Session info: chrome=116.0.5845.187)
+2023-09-15T12:36:07.097Z INFO webdriver: COMMAND getLogTypes()
+2023-09-15T12:36:07.097Z INFO webdriver: [GET] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/se/log/types
+2023-09-15T12:36:07.099Z INFO webdriver: RESULT [ 'browser', 'driver' ]
+2023-09-15T12:36:07.100Z INFO webdriver: COMMAND getLogs("driver")
+2023-09-15T12:36:07.100Z INFO webdriver: COMMAND getLogs("browser")
+2023-09-15T12:36:07.100Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/se/log
+2023-09-15T12:36:07.100Z INFO webdriver: DATA { type: 'driver' }
+2023-09-15T12:36:07.101Z INFO webdriver: [POST] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7/se/log
+2023-09-15T12:36:07.101Z INFO webdriver: DATA { type: 'browser' }
+2023-09-15T12:36:07.104Z INFO webdriver: RESULT []
+2023-09-15T12:36:07.104Z INFO webdriver: RESULT [
+  {
+    level: 'SEVERE',
+    message: 'https://www.amazon.com/gp/product/sessionCacheUpdateHandler.html - Failed to load resource: the server responded with a status of 404 ()',
+    source: 'network',
+    timestamp: 1694781250494
+  },
+  {
+    level: 'WARNING',
+    message: 'https://m.media-amazon.com/images/I/01I3s4SlPiL._RC%7C21A5Hkr6--L.js,216Y5JcOfSL.js,11-asXJWfkL.js,01s80TZosWL.js,015gdESSAtL.js,01GJONmvbXL.js,017VcaK0ACL.js,01Gujc1zuyL.js,61LGPQyMsqL.js_.js?AUIClients/DetailPageMetaAssetFixed&mFqiD/yv 8:276 "iconfarm state may not be available"',
+    source: 'console-api',
+    timestamp: 1694781334062
+  },
+  {
+    level: 'WARNING',
+    message: 'https://images-na.ssl-images-amazon.com/images/I/21jBMrGpjnL._RC%7C01x4giTy+uL.js,01r9LpT6pbL.js,41G0G7ac07L.js,11QfrzttlqL.js,91CS+RFGidL.js,01ELLYeIOkL.js_.js?AUIClients/Brila 116:1974 "VIDEOJS:" "WARN:" "Using hls options is deprecated. Use vhs instead."',
+    source: 'console-api',
+    timestamp: 1694781335063
+  },
+  {
+    level: 'SEVERE',
+    message: 'https://images-na.ssl-images-amazon.com/images/I/31bJewCvY-L.js 3:388 "Error logged with the Track&Report JS errors API(http://tiny/1covqr6l8/wamazindeClieUserJava): {\\"m\\":\\"streamJSONUsingFetch failedFailed to fetch\\",\\"name\\":\\"TypeError\\",\\"csm\\":\\"v5 ueLogError stack\\",\\"logLevel\\":\\"ERROR\\",\\"attribution\\":\\"CheckoutCartPrefetchAsset: Website > Amazon Checkout Pipeline > Others\\",\\"pageURL\\":\\"https://www.amazon.com/gp/cart/view.html?ref_=nav_cart\\",\\"f\\":\\"https://images-na.ssl-images-amazon.com/images/I/119yb0mwptL.js?AUIClients/CheckoutCartPrefetchAsset&FCqkyy4n\\",\\"l\\":\\"5\\",\\"s\\":[\\"TypeError: Failed to fetch\\",\\"at t (https://images-na.ssl-images-amazon.com/images/I/119yb0mwptL.js?AUIClients/CheckoutCartPrefetchAsset&FCqkyy4n:5:219)\\",\\"at Object.streamJSONPrefetchRequest (https://images-na.ssl-images-amazon.com/images/I/119yb0mwptL.js?AUIClients/CheckoutCartPrefetchAsset&FCqkyy4n:7:281)\\",\\"at g (https://images-na.ssl-images-amazon.com/images/I/119yb0mwptL.js?AUIClients/CheckoutCartPrefetchAsset&FCqkyy4n:2:141)\\",\\"at https://images-na.ssl-images-amazon.com/images/I/119yb0mwptL.js?AUIClients/CheckoutCartPrefetchAsset&FCqkyy4n:3:254\\",\\"at p (https://www.amazon.com/gp/cart/view.html?ref_=nav_cart:98:157)\\",\\"at https://www.amazon.com/gp/cart/view.html?ref_=nav_cart:99:487\\",\\"at fa (https://www.amazon.com/gp/cart/view.html?ref_=nav_cart:102:179)\\"],\\"t\\":990}" Object',
+    source: 'console-api',
+    timestamp: 1694781342209
+  },
+  {
+    level: 'SEVERE',
+    message: 'https://www.amazon.com/gp/product/sessionCacheUpdateHandler.html - Failed to load resource: the server responded with a status of 404 ()',
+    source: 'network',
+    timestamp: 1694781356202
+  },
+  {
+    level: 'SEVERE',
+    message: 'https://www.amazon.com/gp/youraccount/navigation/sidepanel?rid=TBNH7GHQS8SWQPYASCKR&_=1694781358923 - Failed to load resource: the server responded with a status of 404 ()',
+    source: 'network',
+    timestamp: 1694781359182
+  },
+  {
+    level: 'SEVERE',
+    message: 'https://www.amazon.com/gp/youraccount/navigation/sidepanel?rid=TBNH7GHQS8SWQPYASCKR&_=1694781359590 - Failed to load resource: the server responded with a status of 404 ()',
+    source: 'network',
+    timestamp: 1694781359841
+  },
+  {
+    level: 'SEVERE',
+    message: 'https://www.amazon.com/gp/youraccount/navigation/sidepanel?rid=TBNH7GHQS8SWQPYASCKR&_=1694781360232 - Failed to load resource: the server responded with a status of 404 ()',
+    source: 'network',
+    timestamp: 1694781360484
+  },
+  {
+    level: 'SEVERE',
+    message: 'https://www.amazon.com/gp/youraccount/navigation/sidepanel?rid=TBNH7GHQS8SWQPYASCKR&_=1694781360882 - Failed to load resource: the server responded with a status of 404 ()',
+    source: 'network',
+    timestamp: 1694781361130
+  },
+  {
+    level: 'SEVERE',
+    message: 'https://images-na.ssl-images-amazon.com/images/I/41W974vG8QL._RC%7C71zzjyvEIHL.js,01QvReFeJyL.js,01phmzCOwJL.js,01eOvPdxG7L.js,71RDRWJQQQL.js,41306Iio4NL.js,115pV8Rl02L.js,01+pnQJuQ0L.js,21rDHgaooIL.js,41LFml+7fVL.js,51t-JTxfnwL.js,317BC63dC8L.js,11lEMI5MhIL.js,31c7Fn9h9gL.js,01LEzWzrPZL.js,01AqeWA7PKL.js_.js?AUIClients/NavDesktopUberAsset&lLvq0Ux1 5:190 Object undefined',
+    source: 'console-api',
+    timestamp: 1694781361530
+  },
+  {
+    level: 'SEVERE',
+    message: 'https://images-na.ssl-images-amazon.com/images/I/31bJewCvY-L.js 3:388 "Error logged with the Track&Report JS errors API(http://tiny/1covqr6l8/wamazindeClieUserJava): {\\"m\\":\\"AJAX call failed for /gp/youraccount/navigation/sidepanel with error: \\",\\"csm\\":\\"v5 ueLogError callee\\",\\"logLevel\\":\\"ERROR\\",\\"pageURL\\":\\"https://www.amazon.com/s?k=smartwatches&ref=nb_sb_noss\\",\\"s\\":[\\"function(a,c){if(1===arguments.length&&\\\\\\"string\\\\\\"===typeof a)u({message:\\\\\\"rcx-nav: \\\\\\"+a});else if(e.console&&e.console.error&&e.console.error(a,c),e.ueLogError)e.ueLogError(a,c);else throw a;}\\",\\"function(a,b,c){if(e.isShoppingPortalAjax){var d=(a.responseText||\\\\\\"\\\\\\").split(\\\\\\"\\\\\\\\x3c!-- sp:error_pages --\\\\\\\\x3e\\\\\\")[0];try{if(JSON.parse(d).data&&q&&\\\\\\"function\\\\\\"===typeof q){q(d);return}}catch(B){}}m({logLevel:\\\\\\"ERROR\\\\\\",message:\\\\\\"AJAX call failed for \\\\\\"+e.url+\\\\\\" with \\\\\\"+b+\\\\\\": \\\\\\"+c});e.data&&(d=e.data.metricKey||\\\\\\"\\\\\\")&&l.increment(d+\\\\\\"-AjaxCallCountError\\\\\\");v&&\\\\\\"function\\\\\\"===typeof v&&v(a,b,c)}\\",\\"function(){0\\u003C=--this.retryLimit?(a.ajax(this),b.retry&&b.retry(this)):c&&c.apply(this,arguments)}\\",\\"function(c,f){if(!e&&!b&&!d){f=f||[];d=1;try{for(;a[0];)a.shift().apply(c,f)}finally{b=[c,f],d=0}}return this}\\",\\"function d(a,b,d,m){if(2!==E){E=2;w&&clearTimeout(w);B=p;q=m||\\\\\\"\\\\\\";v.readyState=0\\u003Ca?4:0;m=b;if(d){var n=e,r=v,u=n.contents,y=n.dataTypes,\\\\nP=n.responseFields,A,D;for(C in P)C in d&&(r[P[C]]=d[C]);for(;\\\\\\"*\\\\\\"===y[0];)y.shift(),A===p&&(A=n.mimeType||r.getResponseH\\",\\"function(d,g){var k;try{if(b&&(g||4===f.readyState))if(b=p,h&&(f.onreadystatechange=c.noop,wa&&delete U[h]),g)4!==f.readyState&&f.abort();else{var l=f.status;var q=f.getAllResponseHeaders();var r={};(k=f.responseXML)&&k.documentElement&&(r.xml=k);r.text=f.\\"],\\"t\\":5038}" Object',
+    source: 'console-api',
+    timestamp: 1694781361537
+  }
+]
+2023-09-15T12:36:07.107Z INFO webdriver: COMMAND deleteSession()
+2023-09-15T12:36:07.107Z INFO webdriver: [DELETE] http://localhost:9515/session/a515456352755f67d34b38d7797d02f7
+2023-09-15T12:36:07.164Z INFO webdriver: RESULT null
